@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <rotate
+            android:fromDegrees="-45"
+            android:pivotX="-38%"
+            android:pivotY="95%"
+            android:toDegrees="45">
+            <shape android:shape="rectangle">
+                <solid android:color="#521a1a1a" />
+            </shape>
+        </rotate>
+    </item>
+</layer-list>-->
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item  >
+        <rotate
+            android:fromDegrees="45"
+            android:toDegrees="-135"
+            android:pivotX="90%"
+            android:pivotY="-45%" >
+            <shape
+                android:shape="rectangle"   >
+                <solid
+                    android:color="#521a1a1a"  />
+            </shape>
+
+        </rotate>
+    </item>
+</layer-list>-->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="21dp"
+    android:height="21dp"
+    android:viewportWidth="25.0"
+    android:viewportHeight="25.0">
+
+    <path
+        android:fillColor="#991a1a1a"
+        android:pathData="M0 24v-24h24z"/>
+
+</vector>

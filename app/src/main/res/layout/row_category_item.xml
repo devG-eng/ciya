@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <!-- <androidx.cardview.widget.CardView
+        android:id="@+id/mcParent"
+        android:elevation="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">-->
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/mcParent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivCat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_outline"
+                android:scaleType="fitXY"
+                android:src="@drawable/places" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_white_traingle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSizeItem"
+                style="@style/txtSemiBold_14Style"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="5"
+                android:text="24 X 24"
+                android:textColor="@color/light_font"
+                android:textSize="@dimen/_26sdp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:id="@+id/txtCatItem"
+                style="@style/txtBold_14Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/_16sdp"
+                android:textAlignment="center"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="-2"
+                android:shadowDy="-2"
+                android:shadowRadius="5"
+                android:textStyle="bold"
+                android:textColor="@color/light_font"/>
+
+        </RelativeLayout>
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</layout>

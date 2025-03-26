@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+    <queries>
+        <package android:name="com.whatsapp" />
+    </queries>
+
+    <application
+        android:name=".SiyaApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SiyaCeramic"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name=".home.ui.dashboard.ImageViewActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name=".home.ui.dashboard.CartActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name=".home.ui.dashboard.ProductsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name=".home.HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name=".forgot.ForgotPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:windowSoftInputMode="adjustPan"
+            android:name=".login.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".register.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

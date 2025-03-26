@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".register.RegisterActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/regRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:src="@drawable/app_logo" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/txtBold_14Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/lets_reg"
+                    android:textAlignment="center"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/_25sdp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/txtRegular_14Style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/have_acc" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/txtRegular_14Style"
+                        android:id="@+id/tvLogin"
+                        android:textColor="@color/appThemeColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="@string/txtLogin" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/corner_grey_border">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtUsername"
+                            style="@style/txtRegular_14Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="User Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/corner_grey_border">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtCompany"
+                            style="@style/txtRegular_14Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="Company Name"
+                            android:imeOptions="actionNext"
+                            android:inputType="text"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/corner_grey_border">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtMobile"
+                            style="@style/txtRegular_14Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="Mobile Number"
+                            android:imeOptions="actionNext"
+                            android:inputType="phone"
+                            android:maxLength="10"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/corner_grey_border">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtEmail"
+                            style="@style/txtRegular_14Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@android:color/transparent"
+                            android:hint="Email Address"
+                            android:imeOptions="actionNext"
+                            android:inputType="textEmailAddress"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/corner_grey_border">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtCreatePwd"
+                            style="@style/txtRegular_14Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:hint="Create Password"
+                            android:imeOptions="actionNext"
+                            android:inputType="textPassword"
+                            android:text=""
+                            android:singleLine="true"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivShowPassword"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:src="@drawable/ic_pass_hide" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/corner_grey_border">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtConfirmPwd"
+                            style="@style/txtRegular_14Style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:background="@android:color/transparent"
+                            android:hint="Confirm Password"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:text=""
+                            android:singleLine="true"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivShowPass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:src="@drawable/ic_pass_hide" />
+
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:background="@drawable/border_blue_corner"
+                        android:text="@string/register"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/progressBar"
+            layout="@layout/custom_progress_bar"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</layout>

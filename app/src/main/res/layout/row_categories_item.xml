@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <!-- <androidx.cardview.widget.CardView
+        android:id="@+id/cardMain"
+        app:cardBackgroundColor="@color/light_blue"
+        android:elevation="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">-->
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/cardMain"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:scaleType="fitXY"
+                android:id="@+id/ivCat"
+                android:background="@drawable/round_outline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/places" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_white_traingle" />
+
+         <!--   <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtSizeItem"
+                style="@style/txtSemiBold_14Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="-3"
+                android:shadowDy="-3"
+                android:shadowRadius="10"
+                android:text="24 X 24"
+                android:textColor="@color/light_font"
+                android:textSize="@dimen/_19sdp"
+                android:textStyle="bold" />-->
+
+
+
+
+            <!-- <androidx.appcompat.widget.AppCompatImageView
+                 android:id="@+id/ivCat"
+                 android:layout_width="@dimen/_112sdp"
+                 android:layout_height="@dimen/_108sdp"
+                 android:layout_gravity="center"
+                 android:layout_marginStart="@dimen/_5sdp"
+                 android:scaleType="fitXY"
+                 android:src="@drawable/ic_tiles" />-->
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCatItem"
+                style="@style/txtSemiBold_14Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_toStartOf="@+id/ivArrow"
+                android:text="User"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="-3"
+                android:shadowDy="-3"
+                android:shadowRadius="10"
+                android:textStyle="bold"
+                android:textColor="@color/light_font"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivArrow"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_12sdp"
+                android:src="@drawable/ic_white_arrow"
+                />
+
+
+
+
+        </RelativeLayout>
+<!--    </androidx.cardview.widget.CardView>-->
+
+</layout>
